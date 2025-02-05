@@ -17,7 +17,11 @@
             <input type="number" id="vatRate" value="10" min="0" max="100" step="0.1">
         </div>
 
-        <div class="calculation-section">
+        <div class="mode-toggle">
+            <button id="calcModeToggle" class="calc-mode-toggle" data-mode="total" data-i18n="switchToNet">공급가액 계산으로 전환</button>
+        </div>
+
+        <div id="totalBasedCalc" class="calculation-section">
             <h2 data-i18n="calculateFromTotal">총액으로 계산하기</h2>
             <div class="input-group">
                 <label for="totalPrice" data-i18n="totalPrice">총액</label>
@@ -30,7 +34,7 @@
             </div>
         </div>
 
-        <div class="calculation-section">
+        <div id="netBasedCalc" class="calculation-section" style="display: none;">
             <h2 data-i18n="calculateFromNet">공급가액으로 계산하기</h2>
             <div class="input-group">
                 <label for="priceWithoutVat" data-i18n="priceWithoutVat">공급가액</label>

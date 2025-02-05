@@ -12,14 +12,14 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #333;
     margin: 0 0 15px 0;
     text-align: center;
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #444;
     margin: 15px 0 10px 0;
 }
@@ -32,7 +32,7 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #555;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 input[type="number"] {
@@ -41,7 +41,7 @@ input[type="number"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 input[type="number"]:focus {
@@ -85,7 +85,7 @@ button:hover {
 .result p {
     margin: 5px 0;
     color: #333;
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 
 .result span {
@@ -114,4 +114,21 @@ button:hover {
 
 .language-toggle:hover {
     background-color: #45a049;
+}
+
+.mode-toggle {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.calc-mode-toggle {
+    width: auto;
+    min-width: 200px;
+    background-color: #2196F3;
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+
+.calc-mode-toggle:hover {
+    background-color: #1976D2;
 } 

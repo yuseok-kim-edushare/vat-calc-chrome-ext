@@ -8,7 +8,9 @@ const translations = {
         priceWithoutVat: '공급가액',
         calculateFromNet: '공급가액으로 계산하기',
         calculate: '계산하기',
-        switchToEnglish: 'Switch to English'
+        switchToEnglish: 'Switch to English',
+        switchToNet: '공급가액 계산으로 전환',
+        switchToTotal: '총액 계산으로 전환'
     },
     en: {
         title: 'VAT Calculator',
@@ -19,6 +21,8 @@ const translations = {
         priceWithoutVat: 'Price without VAT',
         calculateFromNet: 'Calculate from Price without VAT',
         calculate: 'Calculate',
-        switchToKorean: '한국어로 전환'
+        switchToKorean: '한국어로 전환',
+        switchToNet: 'Switch to Net Price Calculation',
+        switchToTotal: 'Switch to Total Price Calculation'
     }
 }; 

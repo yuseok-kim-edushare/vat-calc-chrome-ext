@@ -20,9 +20,9 @@ document.getElementById('languageToggle').addEventListener('click', () => {
     updateLanguage(currentLanguage === 'ko' ? 'en' : 'ko');
 });
 
-// Format number to 2 decimal places
+// Format number to 2 decimal places with thousand separators
 function formatNumber(num) {
-    return Number(num).toFixed(2);
+    return Number(num).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // Calculate from total price
@@ -67,6 +67,25 @@ document.getElementById('priceWithoutVat').addEventListener('input', calculateFr
 document.getElementById('vatRate').addEventListener('input', () => {
     if (document.getElementById('totalPrice').value) calculateFromTotal();
     if (document.getElementById('priceWithoutVat').value) calculateFromNet();
+});
+
+// Add toggle functionality for calculation modes
+document.getElementById('calcModeToggle').addEventListener('click', function() {
+    const totalCalc = document.getElementById('totalBasedCalc');
+    const netCalc = document.getElementById('netBasedCalc');
+    const currentMode = this.getAttribute('data-mode');
+
+    if (currentMode === 'total') {
+        totalCalc.style.display = 'none';
+        netCalc.style.display = 'block';
+        this.setAttribute('data-mode', 'net');
+        this.textContent = translations[currentLanguage]['switchToTotal'];
+    } else {
+        totalCalc.style.display = 'block';
+        netCalc.style.display = 'none';
+        this.setAttribute('data-mode', 'total');
+        this.textContent = translations[currentLanguage]['switchToNet'];
+    }
 });
 
 // Initialize the page with Korean language
