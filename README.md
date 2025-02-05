@@ -1,39 +1,38 @@
-# VAT Calculator Chrome Extension
+ # VAT 계산기 크롬 확장 프로그램
 
-A simple and efficient Chrome extension that helps you calculate VAT (Value Added Tax) amounts and prices in real-time. Perfect for quick tax calculations while browsing.
+실시간으로 부가가치세(VAT) 금액과 가격을 계산하는 간단하고 효율적인 크롬 확장 프로그램입니다. 웹 브라우징 중 빠른 세금 계산이 필요할 때 완벽한 도구입니다.
 
-## Features
+[English](README.en.md)
 
-- Calculate VAT amount and price without VAT from a total price
-- Calculate VAT amount and total price from a price without VAT
-- Adjustable VAT rate (default 10%)
-- Real-time calculations as you type
-- Clean and user-friendly interface
-- Supports decimal precision up to 2 places
+## 주요 기능
 
-## Installation
+- 총액에서 부가가치세 금액과 세전 가격 계산
+- 세전 가격에서 부가가치세 금액과 총액 계산
+- 조정 가능한 부가가치세율 (기본 10%)
+- 입력 즉시 실시간 계산
+- 깔끔하고 사용자 친화적인 인터페이스
+- 소수점 2자리까지 지원
 
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right corner
-4. Click "Load unpacked" and select the extension directory
+## 설치 방법
 
-## How to Use
+1. 이 저장소를 다운로드하거나 클론하기
+2. 크롬 브라우저에서 `chrome://extensions/` 접속
+3. 우측 상단의 "개발자 모드" 활성화
+4. "압축해제된 확장 프로그램을 로드합니다" 클릭 후 확장 프로그램 디렉토리 선택
 
-1. Click the VAT Calculator icon in your Chrome toolbar
-2. Set your desired VAT rate (%) using the input field
-3. Choose your calculation method:
-   - Calculate from Total Price: Enter the total amount to see the VAT amount and price without VAT
-   - Calculate from Price without VAT: Enter the net price to see the VAT amount and total price
+## 사용 방법
 
-## Technical Details
+1. 크롬 툴바에서 VAT 계산기 아이콘 클릭
+2. 원하는 부가가치세율(%)을 입력 필드에서 설정
+3. 계산 방식 선택:
+   - 총액으로 계산: 총액을 입력하여 부가가치세 금액과 세전 가격 확인
+   - 세전 가격으로 계산: 순수 가격을 입력하여 부가가치세 금액과 총액 확인
 
-- Built with vanilla JavaScript
-- Uses Chrome Extension Manifest V3
-- Lightweight and performant
-- No external dependencies
+## 기술 세부사항
 
-## File Structure 
+- 크롬 확장 프로그램 Manifest V3 사용
+
+## 파일 구조
 ```
 ├── icons/
 │   ├── icon16.png
@@ -45,10 +44,10 @@ A simple and efficient Chrome extension that helps you calculate VAT (Value Adde
 └── manifest.json
 ```
 
-## Contributing
+## 기여하기
 
-Feel free to submit issues and enhancement requests!
+문제점 및 개선 요청 사항을 자유롭게 제출해 주세요!
 
-## License
+## 라이선스
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+이 프로젝트는 MIT 라이선스를 따릅니다 - 자세한 내용은 LICENSE 파일을 참조하세요.
