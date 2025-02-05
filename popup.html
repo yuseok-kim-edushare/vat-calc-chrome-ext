@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>VAT Calculator</title>
+    <title>VAT 계산기</title>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 </head>
 <body>
     <div class="calculator">
-        <h1>VAT Calculator</h1>
+        <div class="header">
+            <h1 data-i18n="title">VAT 계산기</h1>
+            <button id="languageToggle" class="language-toggle">Switch to English</button>
+        </div>
         
         <div class="input-group">
-            <label for="vatRate">VAT Rate (%)</label>
+            <label for="vatRate" data-i18n="vatRate">VAT 세율 (%)</label>
             <input type="number" id="vatRate" value="10" min="0" max="100" step="0.1">
         </div>
 
         <div class="calculation-section">
-            <h2>Calculate from Total Price</h2>
+            <h2 data-i18n="calculateFromTotal">총액으로 계산하기</h2>
             <div class="input-group">
-                <label for="totalPrice">Total Price</label>
+                <label for="totalPrice" data-i18n="totalPrice">총액</label>
                 <input type="number" id="totalPrice" step="0.01" min="0">
             </div>
-            <button onclick="calculateFromTotal()">Calculate</button>
+            <button onclick="calculateFromTotal()" data-i18n="calculate">계산하기</button>
             <div class="result">
-                <p>VAT Amount: <span id="vatAmount1">0.00</span></p>
-                <p>Price without VAT: <span id="priceWithoutVat1">0.00</span></p>
+                <p><span data-i18n="vatAmount">VAT 금액</span>: <span id="vatAmount1">0.00</span></p>
+                <p><span data-i18n="priceWithoutVat">VAT 제외 금액</span>: <span id="priceWithoutVat1">0.00</span></p>
             </div>
         </div>
 
         <div class="calculation-section">
-            <h2>Calculate from Price without VAT</h2>
+            <h2 data-i18n="calculateFromNet">VAT 제외 금액으로 계산하기</h2>
             <div class="input-group">
-                <label for="priceWithoutVat">Price without VAT</label>
+                <label for="priceWithoutVat" data-i18n="priceWithoutVat">VAT 제외 금액</label>
                 <input type="number" id="priceWithoutVat" step="0.01" min="0">
             </div>
-            <button onclick="calculateFromNet()">Calculate</button>
+            <button onclick="calculateFromNet()" data-i18n="calculate">계산하기</button>
             <div class="result">
-                <p>VAT Amount: <span id="vatAmount2">0.00</span></p>
-                <p>Total Price: <span id="totalPrice2">0.00</span></p>
+                <p><span data-i18n="vatAmount">VAT 금액</span>: <span id="vatAmount2">0.00</span></p>
+                <p><span data-i18n="totalPrice">총액</span>: <span id="totalPrice2">0.00</span></p>
             </div>
         </div>
     </div>
+    <script src="translations.js"></script>
     <script src="popup.js"></script>
 </body>
 </html> 
