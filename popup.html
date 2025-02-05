@@ -26,14 +26,14 @@
             <button onclick="calculateFromTotal()" data-i18n="calculate">계산하기</button>
             <div class="result">
                 <p><span data-i18n="vatAmount">VAT 금액</span>: <span id="vatAmount1">0.00</span></p>
-                <p><span data-i18n="priceWithoutVat">VAT 제외 금액</span>: <span id="priceWithoutVat1">0.00</span></p>
+                <p><span data-i18n="priceWithoutVat">공급가액</span>: <span id="priceWithoutVat1">0.00</span></p>
             </div>
         </div>
 
         <div class="calculation-section">
-            <h2 data-i18n="calculateFromNet">VAT 제외 금액으로 계산하기</h2>
+            <h2 data-i18n="calculateFromNet">공급가액으로 계산하기</h2>
             <div class="input-group">
-                <label for="priceWithoutVat" data-i18n="priceWithoutVat">VAT 제외 금액</label>
+                <label for="priceWithoutVat" data-i18n="priceWithoutVat">공급가액</label>
                 <input type="number" id="priceWithoutVat" step="0.01" min="0">
             </div>
             <button onclick="calculateFromNet()" data-i18n="calculate">계산하기</button>

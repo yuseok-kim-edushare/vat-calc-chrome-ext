@@ -5,8 +5,8 @@ const translations = {
         calculateFromTotal: '총액으로 계산하기',
         totalPrice: '총액',
         vatAmount: '부가세 금액',
-        priceWithoutVat: '부가세 제외 금액',
-        calculateFromNet: '부가세 제외 금액으로 계산하기',
+        priceWithoutVat: '공급가액',
+        calculateFromNet: '공급가액으로 계산하기',
         calculate: '계산하기',
         switchToEnglish: 'Switch to English'
     },
