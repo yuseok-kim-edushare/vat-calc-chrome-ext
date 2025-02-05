@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="5" width="38" height="38" rx="8" fill="#2196F3"/>
+    <rect x="9" y="9" width="30" height="10" rx="2" fill="white"/>
+    <text x="24" y="17" font-family="Arial, sans-serif" font-size="8" fill="#2196F3" text-anchor="middle" font-weight="bold">VAT</text>
+    <rect x="9" y="21" width="13" height="8" rx="1" fill="white"/>
+    <rect x="26" y="21" width="13" height="8" rx="1" fill="white"/>
+    <rect x="9" y="31" width="13" height="8" rx="1" fill="white"/>
+    <rect x="26" y="31" width="13" height="8" rx="1" fill="white"/>
+</svg> 
