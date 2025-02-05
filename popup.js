@@ -27,12 +27,13 @@ function formatNumber(num) {
 
 // Calculate from total price
 function calculateFromTotal() {
-    const totalPrice = parseFloat(document.getElementById('totalPrice').value) || 0;
+    let totalPrice = parseFloat(document.getElementById('totalPrice').value) || 0;
     const vatRate = parseFloat(document.getElementById('vatRate').value) || 0;
 
-    if (totalPrice <= 0) {
-        alert('Please enter a valid total price');
-        return;
+    // Set negative values to 0
+    if (totalPrice < 0) {
+        totalPrice = 0;
+        document.getElementById('totalPrice').value = 0;
     }
 
     const vatAmount = totalPrice - (totalPrice / (1 + vatRate / 100));
@@ -44,12 +45,13 @@ function calculateFromTotal() {
 
 // Calculate from price without VAT
 function calculateFromNet() {
-    const priceWithoutVat = parseFloat(document.getElementById('priceWithoutVat').value) || 0;
+    let priceWithoutVat = parseFloat(document.getElementById('priceWithoutVat').value) || 0;
     const vatRate = parseFloat(document.getElementById('vatRate').value) || 0;
 
-    if (priceWithoutVat <= 0) {
-        alert('Please enter a valid price without VAT');
-        return;
+    // Set negative values to 0
+    if (priceWithoutVat < 0) {
+        priceWithoutVat = 0;
+        document.getElementById('priceWithoutVat').value = 0;
     }
 
     const vatAmount = priceWithoutVat * (vatRate / 100);
